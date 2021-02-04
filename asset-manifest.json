@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/MoPE-hub/mope-hub.github.io/static/css/main.9c8aaa5a.chunk.css",
-    "main.js": "/MoPE-hub/mope-hub.github.io/static/js/main.b14befcc.chunk.js",
-    "main.js.map": "/MoPE-hub/mope-hub.github.io/static/js/main.b14befcc.chunk.js.map",
-    "runtime-main.js": "/MoPE-hub/mope-hub.github.io/static/js/runtime-main.239efeb5.js",
-    "runtime-main.js.map": "/MoPE-hub/mope-hub.github.io/static/js/runtime-main.239efeb5.js.map",
-    "static/js/2.d294fd32.chunk.js": "/MoPE-hub/mope-hub.github.io/static/js/2.d294fd32.chunk.js",
-    "static/js/2.d294fd32.chunk.js.map": "/MoPE-hub/mope-hub.github.io/static/js/2.d294fd32.chunk.js.map",
-    "index.html": "/MoPE-hub/mope-hub.github.io/index.html",
-    "static/css/main.9c8aaa5a.chunk.css.map": "/MoPE-hub/mope-hub.github.io/static/css/main.9c8aaa5a.chunk.css.map",
-    "static/js/2.d294fd32.chunk.js.LICENSE.txt": "/MoPE-hub/mope-hub.github.io/static/js/2.d294fd32.chunk.js.LICENSE.txt",
-    "static/media/style.css": "/MoPE-hub/mope-hub.github.io/static/media/pp-main.4a3a9fab.png"
+    "main.css": "/mope-hub.github.io/static/css/main.661c3028.chunk.css",
+    "main.js": "/mope-hub.github.io/static/js/main.2b235b9c.chunk.js",
+    "main.js.map": "/mope-hub.github.io/static/js/main.2b235b9c.chunk.js.map",
+    "runtime-main.js": "/mope-hub.github.io/static/js/runtime-main.f2c8f2e3.js",
+    "runtime-main.js.map": "/mope-hub.github.io/static/js/runtime-main.f2c8f2e3.js.map",
+    "static/js/2.d294fd32.chunk.js": "/mope-hub.github.io/static/js/2.d294fd32.chunk.js",
+    "static/js/2.d294fd32.chunk.js.map": "/mope-hub.github.io/static/js/2.d294fd32.chunk.js.map",
+    "index.html": "/mope-hub.github.io/index.html",
+    "static/css/main.661c3028.chunk.css.map": "/mope-hub.github.io/static/css/main.661c3028.chunk.css.map",
+    "static/js/2.d294fd32.chunk.js.LICENSE.txt": "/mope-hub.github.io/static/js/2.d294fd32.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/mope-hub.github.io/static/media/pp-main.4a3a9fab.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.239efeb5.js",
+    "static/js/runtime-main.f2c8f2e3.js",
     "static/js/2.d294fd32.chunk.js",
-    "static/css/main.9c8aaa5a.chunk.css",
-    "static/js/main.b14befcc.chunk.js"
+    "static/css/main.661c3028.chunk.css",
+    "static/js/main.2b235b9c.chunk.js"
   ]
 }
