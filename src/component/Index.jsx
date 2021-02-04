@@ -31,22 +31,13 @@ class Main extends Component {
                   <ul className="text-left">
                     <li className="explain">KT Paperless 개편 사이트</li>
                     <li className="explain">제작기간 : 3주</li>
-                    <li className="explain">사용언어 : html, css(scss), js</li>
+                    <li className="explain">사용언어 : html, css(scss), js, React</li>
                     <li className="explain">최소한의 js를 사용</li>
-                    <li className="explain"><a href="https://paperless.kt.com/main/welcome_new.htm" target="_blank">웹사이트 이동</a></li>
                   </ul>
                   <span className="portfolio-img"></span>
                 </div>
               </li>
               <li>
-                <div className="dis-flex-center">
-                  <span className="portfolio-img"></span>
-                  <ul className="text-right">
-                    <li className="explain">KT Paperless 개편 사이트 (React version)</li>
-                    <li className="explain">제작기간 : 제작중</li>
-                    <li className="explain">사용언어 : React</li>
-                  </ul>
-                </div>
               </li>
               <li></li>
               <li></li>
