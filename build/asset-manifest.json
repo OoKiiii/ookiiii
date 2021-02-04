@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MoPE-hub/MoPE-hub/static/css/main.5cc573de.chunk.css",
+    "main.css": "/MoPE-hub/MoPE-hub/static/css/main.f22429e4.chunk.css",
     "main.js": "/MoPE-hub/MoPE-hub/static/js/main.9fd59a48.chunk.js",
     "main.js.map": "/MoPE-hub/MoPE-hub/static/js/main.9fd59a48.chunk.js.map",
     "runtime-main.js": "/MoPE-hub/MoPE-hub/static/js/runtime-main.d470966d.js",
@@ -8,14 +8,14 @@
     "static/js/2.50219e04.chunk.js": "/MoPE-hub/MoPE-hub/static/js/2.50219e04.chunk.js",
     "static/js/2.50219e04.chunk.js.map": "/MoPE-hub/MoPE-hub/static/js/2.50219e04.chunk.js.map",
     "index.html": "/MoPE-hub/MoPE-hub/index.html",
-    "static/css/main.5cc573de.chunk.css.map": "/MoPE-hub/MoPE-hub/static/css/main.5cc573de.chunk.css.map",
+    "static/css/main.f22429e4.chunk.css.map": "/MoPE-hub/MoPE-hub/static/css/main.f22429e4.chunk.css.map",
     "static/js/2.50219e04.chunk.js.LICENSE.txt": "/MoPE-hub/MoPE-hub/static/js/2.50219e04.chunk.js.LICENSE.txt",
     "static/media/style.css": "/MoPE-hub/MoPE-hub/static/media/pp-main.4a3a9fab.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d470966d.js",
     "static/js/2.50219e04.chunk.js",
-    "static/css/main.5cc573de.chunk.css",
+    "static/css/main.f22429e4.chunk.css",
     "static/js/main.9fd59a48.chunk.js"
   ]
 }
