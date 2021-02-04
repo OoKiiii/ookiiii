@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/MoPE-hub/MoPE-hub/static/css/main.f22429e4.chunk.css",
-    "main.js": "/MoPE-hub/MoPE-hub/static/js/main.9fd59a48.chunk.js",
-    "main.js.map": "/MoPE-hub/MoPE-hub/static/js/main.9fd59a48.chunk.js.map",
+    "main.js": "/MoPE-hub/MoPE-hub/static/js/main.f736b591.chunk.js",
+    "main.js.map": "/MoPE-hub/MoPE-hub/static/js/main.f736b591.chunk.js.map",
     "runtime-main.js": "/MoPE-hub/MoPE-hub/static/js/runtime-main.d470966d.js",
     "runtime-main.js.map": "/MoPE-hub/MoPE-hub/static/js/runtime-main.d470966d.js.map",
     "static/js/2.50219e04.chunk.js": "/MoPE-hub/MoPE-hub/static/js/2.50219e04.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.d470966d.js",
     "static/js/2.50219e04.chunk.js",
     "static/css/main.f22429e4.chunk.css",
-    "static/js/main.9fd59a48.chunk.js"
+    "static/js/main.f736b591.chunk.js"
   ]
 }
