@@ -46,66 +46,66 @@ class Main extends Component {
           </div>
         </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
-          <g id="Background">
-            <path fill="#000000" d="M0 0h800v800H0z"/>
-            <g id="stars" fill="#FFF">
-              <circle opacity=".8" cx="50" cy="100" r="5"/>
-              <circle opacity=".8" cx="50" cy="400" r="5"/>
-              <circle opacity=".8" cx="150" cy="400" r="5"/>
-              <circle opacity=".8" cx="150" cy="300" r="5"/>
-              <circle opacity=".8" cx="250" cy="300" r="5"/>
-              <circle opacity=".8" cx="250" cy="400" r="5"/>
-              <circle opacity=".8" cx="350" cy="400" r="5"/>
-              <circle opacity=".8" cx="350" cy="100" r="5"/>
-              <circle opacity=".8" cx="250" cy="100" r="5"/>
-              <circle opacity=".8" cx="250" cy="200" r="5"/>
-              <circle opacity=".8" cx="150" cy="200" r="5"/>
-              <circle opacity=".8" cx="150" cy="100" r="5"/>
+        {/*<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">*/}
+        {/*  <g id="Background">*/}
+        {/*    <path fill="#000000" d="M0 0h800v800H0z"/>*/}
+        {/*    <g id="stars" fill="#FFF">*/}
+        {/*      <circle opacity=".8" cx="50" cy="100" r="5"/>*/}
+        {/*      <circle opacity=".8" cx="50" cy="400" r="5"/>*/}
+        {/*      <circle opacity=".8" cx="150" cy="400" r="5"/>*/}
+        {/*      <circle opacity=".8" cx="150" cy="300" r="5"/>*/}
+        {/*      <circle opacity=".8" cx="250" cy="300" r="5"/>*/}
+        {/*      <circle opacity=".8" cx="250" cy="400" r="5"/>*/}
+        {/*      <circle opacity=".8" cx="350" cy="400" r="5"/>*/}
+        {/*      <circle opacity=".8" cx="350" cy="100" r="5"/>*/}
+        {/*      <circle opacity=".8" cx="250" cy="100" r="5"/>*/}
+        {/*      <circle opacity=".8" cx="250" cy="200" r="5"/>*/}
+        {/*      <circle opacity=".8" cx="150" cy="200" r="5"/>*/}
+        {/*      <circle opacity=".8" cx="150" cy="100" r="5"/>*/}
 
-              <path d="M50,100 V400z" stroke="white" stroke-width="1px" opacity=".5" className="ani-opacity-07"/>
-              <path d="M50,400 H150z" stroke="white" stroke-width="1px" className="ani-opacity-15"/>
-              <path d="M150,400 V300z" stroke="white" stroke-width="1px" className="ani-opacity-1"/>
-              <path d="M150,300 H250z" stroke="white" stroke-width="1px" className="ani-opacity-15"/>
-              <path d="M250,300 V400z" stroke="white" stroke-width="1px" className="ani-opacity-13"/>
-              <path d="M250,400 H350z" stroke="white" stroke-width="1px" className="ani-opacity-07"/>
-              <path d="M350,100 V400z" stroke="white" stroke-width="1px" className="ani-opacity-15"/>
-              <path d="M250,100 H350z" stroke="white" stroke-width="1px" className="ani-opacity-18"/>
-              <path d="M250,100 V200z" stroke="white" stroke-width="1px" className="ani-opacity-1"/>
-              <path d="M150,200 H250z" stroke="white" stroke-width="1px" className="ani-opacity-07"/>
-              <path d="M150,100 V200z" stroke="white" stroke-width="1px" className="ani-opacity-15"/>
-              <path d="M50,100 H150z" stroke="white" stroke-width="1px" className="ani-opacity-13"/>
+        {/*      <path d="M50,100 V400z" stroke="white" stroke-width="1px" opacity=".5" className="ani-opacity-07"/>*/}
+        {/*      <path d="M50,400 H150z" stroke="white" stroke-width="1px" className="ani-opacity-15"/>*/}
+        {/*      <path d="M150,400 V300z" stroke="white" stroke-width="1px" className="ani-opacity-1"/>*/}
+        {/*      <path d="M150,300 H250z" stroke="white" stroke-width="1px" className="ani-opacity-15"/>*/}
+        {/*      <path d="M250,300 V400z" stroke="white" stroke-width="1px" className="ani-opacity-13"/>*/}
+        {/*      <path d="M250,400 H350z" stroke="white" stroke-width="1px" className="ani-opacity-07"/>*/}
+        {/*      <path d="M350,100 V400z" stroke="white" stroke-width="1px" className="ani-opacity-15"/>*/}
+        {/*      <path d="M250,100 H350z" stroke="white" stroke-width="1px" className="ani-opacity-18"/>*/}
+        {/*      <path d="M250,100 V200z" stroke="white" stroke-width="1px" className="ani-opacity-1"/>*/}
+        {/*      <path d="M150,200 H250z" stroke="white" stroke-width="1px" className="ani-opacity-07"/>*/}
+        {/*      <path d="M150,100 V200z" stroke="white" stroke-width="1px" className="ani-opacity-15"/>*/}
+        {/*      <path d="M50,100 H150z" stroke="white" stroke-width="1px" className="ani-opacity-13"/>*/}
 
-              <circle opacity=".5" cx="400" cy="100" r="5"/>
-              <circle opacity=".5" cx="400" cy="400" r="5"/>
-              <circle opacity=".5" cx="500" cy="400" r="5"/>
-              <circle opacity=".5" cx="500" cy="300" r="5"/>
-              <circle opacity=".5" cx="600" cy="400" r="5"/>
-              <circle opacity=".5" cx="700" cy="400" r="5"/>
-              <circle opacity=".5" cx="550" cy="250" r="5"/>
-              <circle opacity=".5" cx="700" cy="100" r="5"/>
-              <circle opacity=".5" cx="600" cy="100" r="5"/>
-              <circle opacity=".5" cx="500" cy="200" r="5"/>
-              <circle opacity=".5" cx="500" cy="100" r="5"/>
+        {/*      <circle opacity=".5" cx="400" cy="100" r="5"/>*/}
+        {/*      <circle opacity=".5" cx="400" cy="400" r="5"/>*/}
+        {/*      <circle opacity=".5" cx="500" cy="400" r="5"/>*/}
+        {/*      <circle opacity=".5" cx="500" cy="300" r="5"/>*/}
+        {/*      <circle opacity=".5" cx="600" cy="400" r="5"/>*/}
+        {/*      <circle opacity=".5" cx="700" cy="400" r="5"/>*/}
+        {/*      <circle opacity=".5" cx="550" cy="250" r="5"/>*/}
+        {/*      <circle opacity=".5" cx="700" cy="100" r="5"/>*/}
+        {/*      <circle opacity=".5" cx="600" cy="100" r="5"/>*/}
+        {/*      <circle opacity=".5" cx="500" cy="200" r="5"/>*/}
+        {/*      <circle opacity=".5" cx="500" cy="100" r="5"/>*/}
 
-              <path d="M400,100 V400z" stroke="white" stroke-width="1px" className="ani-opacity-07"/>
-              <path d="M400,400 H500z" stroke="white" stroke-width="1px" className="ani-opacity-15"/>
-              <path d="M500,300 V400z" stroke="white" stroke-width="1px" className="ani-opacity-1"/>
-              <path d="M500,300 L600,400z" stroke="white" stroke-width="1px" className="ani-opacity-15"/>
-              <path d="M700,400 H600z" stroke="white" stroke-width="1px" className="ani-opacity-13"/>
-              <path d="M700,400 L550,250z" stroke="white" stroke-width="1px" className="ani-opacity-07"/>
-              <path d="M550,250 L700,100z" stroke="white" stroke-width="1px" className="ani-opacity-15"/>
-              <path d="M600,100 H700z" stroke="white" stroke-width="1px" className="ani-opacity-18"/>
-              <path d="M500,200 L600,100z" stroke="white" stroke-width="1px" className="ani-opacity-1"/>
-              <path d="M500,100 V200z" stroke="white" stroke-width="1px" className="ani-opacity-07"/>
-              <path d="M400,100 H500z" stroke="white" stroke-width="1px" className="ani-opacity-15"/>
-              {/*<path d="M50,100 H150z" stroke="white" stroke-width="1px" className="ani-opacity-13"/>*/}
+        {/*      <path d="M400,100 V400z" stroke="white" stroke-width="1px" className="ani-opacity-07"/>*/}
+        {/*      <path d="M400,400 H500z" stroke="white" stroke-width="1px" className="ani-opacity-15"/>*/}
+        {/*      <path d="M500,300 V400z" stroke="white" stroke-width="1px" className="ani-opacity-1"/>*/}
+        {/*      <path d="M500,300 L600,400z" stroke="white" stroke-width="1px" className="ani-opacity-15"/>*/}
+        {/*      <path d="M700,400 H600z" stroke="white" stroke-width="1px" className="ani-opacity-13"/>*/}
+        {/*      <path d="M700,400 L550,250z" stroke="white" stroke-width="1px" className="ani-opacity-07"/>*/}
+        {/*      <path d="M550,250 L700,100z" stroke="white" stroke-width="1px" className="ani-opacity-15"/>*/}
+        {/*      <path d="M600,100 H700z" stroke="white" stroke-width="1px" className="ani-opacity-18"/>*/}
+        {/*      <path d="M500,200 L600,100z" stroke="white" stroke-width="1px" className="ani-opacity-1"/>*/}
+        {/*      <path d="M500,100 V200z" stroke="white" stroke-width="1px" className="ani-opacity-07"/>*/}
+        {/*      <path d="M400,100 H500z" stroke="white" stroke-width="1px" className="ani-opacity-15"/>*/}
+        {/*      /!*<path d="M50,100 H150z" stroke="white" stroke-width="1px" className="ani-opacity-13"/>*!/*/}
 
-              {/*<path d="M 150 50 Q 150 550 150 550 L 300 550 L 300 350 L 400 350 L 400 550 L 550 550 L 550 50 L 400 50 L 400 250 L 300 250 L 300 50 L 150 50"/>*/}
+        {/*      /!*<path d="M 150 50 Q 150 550 150 550 L 300 550 L 300 350 L 400 350 L 400 550 L 550 550 L 550 50 L 400 50 L 400 250 L 300 250 L 300 50 L 150 50"/>*!/*/}
 
-            </g>
-          </g>
-        </svg>
+        {/*    </g>*/}
+        {/*  </g>*/}
+        {/*</svg>*/}
       </React.Fragment>
     )
   }
