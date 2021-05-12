@@ -1,18 +1,16 @@
-import React, { Component } from 'react'
-import Routes from './route/index'
-import { BrowserRouter } from "react-router-dom";
+import React from 'react'
+import Header from './component/default/Header'
+import Footer from './component/default/Footer'
+import Index from './component/Index'
 
-// import './assets/scss/style.scss'
-
-class App extends Component {
-
-  render() {
-    return (
-      <BrowserRouter>
-        <Routes />
-      </BrowserRouter>
-    )
-  }
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <Index />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
