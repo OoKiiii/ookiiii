@@ -1,21 +1,27 @@
 {
   "files": {
-    "main.css": "/MoPE-hub/static/css/main.016498aa.chunk.css",
-    "main.js": "/MoPE-hub/static/js/main.ecb2dfe1.chunk.js",
-    "main.js.map": "/MoPE-hub/static/js/main.ecb2dfe1.chunk.js.map",
-    "runtime-main.js": "/MoPE-hub/static/js/runtime-main.26ce6c8c.js",
-    "runtime-main.js.map": "/MoPE-hub/static/js/runtime-main.26ce6c8c.js.map",
-    "static/js/2.d294fd32.chunk.js": "/MoPE-hub/static/js/2.d294fd32.chunk.js",
-    "static/js/2.d294fd32.chunk.js.map": "/MoPE-hub/static/js/2.d294fd32.chunk.js.map",
-    "index.html": "/MoPE-hub/index.html",
-    "static/css/main.016498aa.chunk.css.map": "/MoPE-hub/static/css/main.016498aa.chunk.css.map",
-    "static/js/2.d294fd32.chunk.js.LICENSE.txt": "/MoPE-hub/static/js/2.d294fd32.chunk.js.LICENSE.txt",
-    "static/media/style.css": "/MoPE-hub/static/media/pp-main.4a3a9fab.png"
+    "main.css": "/static/css/main.c06db1a9.chunk.css",
+    "main.js": "/static/js/main.6cf528ad.chunk.js",
+    "main.js.map": "/static/js/main.6cf528ad.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6696ee5f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6696ee5f.js.map",
+    "static/js/2.f090c731.chunk.js": "/static/js/2.f090c731.chunk.js",
+    "static/js/2.f090c731.chunk.js.map": "/static/js/2.f090c731.chunk.js.map",
+    "static/js/3.15e9b9ab.chunk.js": "/static/js/3.15e9b9ab.chunk.js",
+    "static/js/3.15e9b9ab.chunk.js.map": "/static/js/3.15e9b9ab.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c545c0c32e6ceb7e23e978b011d12f8c.js": "/precache-manifest.c545c0c32e6ceb7e23e978b011d12f8c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c06db1a9.chunk.css.map": "/static/css/main.c06db1a9.chunk.css.map",
+    "static/js/2.f090c731.chunk.js.LICENSE.txt": "/static/js/2.f090c731.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/static/media/NotoSansCJKkr-Regular.81f8ae36.woff",
+    "static/media/bg-fix.png": "/static/media/bg-fix.30069fd6.png",
+    "static/media/pp-main.png": "/static/media/pp-main.df6f2cce.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.26ce6c8c.js",
-    "static/js/2.d294fd32.chunk.js",
-    "static/css/main.016498aa.chunk.css",
-    "static/js/main.ecb2dfe1.chunk.js"
+    "static/js/runtime-main.6696ee5f.js",
+    "static/js/2.f090c731.chunk.js",
+    "static/css/main.c06db1a9.chunk.css",
+    "static/js/main.6cf528ad.chunk.js"
   ]
 }
