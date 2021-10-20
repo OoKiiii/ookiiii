@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "05bcdd8a8ac73cf42625e6bfaa509a99",
+    "revision": "4ac1f4f5cf7c5cc545e5625323216a64",
     "url": "/MoPE-hub/index.html"
   },
   {
-    "revision": "f6ed5b03b873620eeb17",
-    "url": "/MoPE-hub/static/css/main.1ca1d833.chunk.css"
+    "revision": "b1a87fdb5c8d30a07ab6",
+    "url": "/MoPE-hub/static/css/main.35ec5346.chunk.css"
   },
   {
-    "revision": "b86f4c46e90411c54b13",
-    "url": "/MoPE-hub/static/js/2.f090c731.chunk.js"
+    "revision": "b8c64efdc321a6c5a1d2",
+    "url": "/MoPE-hub/static/js/2.4eaa4d22.chunk.js"
   },
   {
     "revision": "f7e623707d9b37a3821ec4c3548a4309",
-    "url": "/MoPE-hub/static/js/2.f090c731.chunk.js.LICENSE.txt"
+    "url": "/MoPE-hub/static/js/2.4eaa4d22.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cbcc84f6e83af90d35b4",
-    "url": "/MoPE-hub/static/js/3.15e9b9ab.chunk.js"
+    "revision": "4c4f1c664ffa7461c077",
+    "url": "/MoPE-hub/static/js/3.96541f1f.chunk.js"
   },
   {
-    "revision": "f6ed5b03b873620eeb17",
-    "url": "/MoPE-hub/static/js/main.1756c43c.chunk.js"
+    "revision": "b1a87fdb5c8d30a07ab6",
+    "url": "/MoPE-hub/static/js/main.6af83df3.chunk.js"
   },
   {
-    "revision": "17f18dd82bf7c0764edb",
-    "url": "/MoPE-hub/static/js/runtime-main.be26c485.js"
+    "revision": "9bc8ec44102eb87ffb2f",
+    "url": "/MoPE-hub/static/js/runtime-main.b3e73ce1.js"
   },
   {
     "revision": "0316627cd824392e0a79b58ad81b6f36",
