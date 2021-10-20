@@ -1,45 +1,91 @@
-.introduce-box {
-  margin-top: 10rem;
-  height: 50rem;
-  .introduce {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .introduce-text {
-      border-top: .2rem solid #ffffff;
+.wrap {
+  @include flex(center, center, 3);
+  height: 100vh;
+  .main {
+    @include flex(center, center, 1);
+    h3 {
+      font-size: 3rem;
+    }
+    .link-box {
+      @include flex(center, center, 1);
+      margin: 5rem 0;
       ul {
+        //margin: 2rem 0;
+        padding: 2rem 0;
         li {
-          font-size: 2rem;
-          margin: 1rem 0;
+          width: 20rem;
+          text-align: center;
+          cursor: pointer;
+          a {
+            font-size: 2.4rem;
+          }
         }
       }
     }
   }
 }
 
-.portfolio-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .portfolio-list {
-    > li {
-      padding: 2rem;
-      margin: 2rem;
-      border-top: .1rem solid #ffffff;
-      border-bottom: .1rem solid #ffffff;
-    }
-    ul,
-    span {
-      margin: 1rem;
-    }
-    .portfolio-img {
-      display: block;
-      width: 50rem;
-      height: 30rem;
-      background: url("../images/pp-main.png");
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center center;
+.introduce-box {
+  @include flex(center, center, 3);
+  width: 100rem;
+  padding-top: 10rem;
+  .introduce {
+    @include flex(center, flex-start, 3);
+    padding: 5rem;
+    .introduce-text {
+      text-align: center;
+      color: #000000;
+      font-size: 2rem;
+      ul {
+        li {
+          padding: 1rem;
+          font-size: 2rem;
+          font-weight: bold;
+          text-align: left;
+          span {
+            font-size: 2.4rem;
+          }
+        }
+      }
     }
   }
+}
+
+.animation-wrap {
+  margin: 10rem 0;
+  .animation-list-box {
+    li {
+      padding: 3rem 0;
+      //border-bottom: .2rem solid #949494;
+    }
+  }
+}
+
+.portfolio {
+  @include flex(center, center, 3);
+  margin: 10rem 0;
+  .portfolio-box {
+    width: 100rem;
+    margin: 3rem 0;
+    border-top: .2rem solid #000000;
+    border-bottom: .2rem solid #000000;
+    .portfolio-box-inner {
+      margin: 0 3rem;
+      padding: 3rem 0;
+      .portfolio-img {
+        width: 50rem;
+      }
+      .portfolio-text {
+        margin: 1rem 0;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.background-img {
+  position: fixed;
+  left: -1rem;
+  bottom: -1rem;
+  width: 50rem;
 }

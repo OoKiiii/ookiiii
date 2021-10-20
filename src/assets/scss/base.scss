@@ -1,13 +1,62 @@
+// Main color : #2d3354
+
+$main-color: #4775bf;
+
+@font-face {
+  font-family:Noto;
+  src:url(../font/NotoSansCJKkr-Regular.eot),
+  url(../font/NotoSansCJKkr-Regular.woff)
+}
+
+html,
+body {
+  background: $main-color;
+  min-height: 100vh;
+}
+
+#root {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
+  //font-family: Noto;
   font-size: 10px;
   color: #ffffff;
   list-style: none;
   text-decoration: none;
 }
 
-html,
-body {
-  background: #282c34;
+.main {
+  font-size: 2.4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html,
+  body {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html,
+  body {
+    font-size: 7px;
+  }
 }

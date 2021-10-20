@@ -1,17 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/scss/style.scss';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { Provider } from 'react-redux'
+import thunk from 'redux-thunk'
+import { createStore, applyMiddleware } from 'redux'
+import { composeWithDevTools } from 'redux-devtools-extension'
+
+import App from './App';
+import rootReducer from './store/reducers'
+import * as serviceWorker from './serviceWorker'
+
+import { persistStore } from "redux-persist";
+import { PersistGate } from "redux-persist/integration/react";
+
+// import Amplify from 'aws-amplify';
+// import config from './aws-exports';
+// Amplify.configure(config);
+
+const store = createStore(
+  rootReducer,
+  composeWithDevTools(
+    applyMiddleware(
+      thunk,
+    ))
+)
+const persistor = persistStore(store);
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
+      <App />
+    </PersistGate>
+  </Provider>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+serviceWorker.unregister()
