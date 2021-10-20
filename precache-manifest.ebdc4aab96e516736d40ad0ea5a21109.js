@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3ce1724e4b7dfd877cce0fb4f2701e5d",
+    "revision": "090d6c3a049e360d3d4d8af35f10aea1",
     "url": "/MoPE-hub/index.html"
   },
   {
-    "revision": "dc1c63b8ac30cbe627ed",
-    "url": "/MoPE-hub/static/css/main.35ec5346.chunk.css"
+    "revision": "f7f9b71f93ddd7e7163b",
+    "url": "/MoPE-hub/static/css/main.67e222ee.chunk.css"
   },
   {
     "revision": "089a9e282ff9371b8562",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MoPE-hub/static/js/3.d72ce1c0.chunk.js"
   },
   {
-    "revision": "dc1c63b8ac30cbe627ed",
+    "revision": "f7f9b71f93ddd7e7163b",
     "url": "/MoPE-hub/static/js/main.b7085edd.chunk.js"
   },
   {
