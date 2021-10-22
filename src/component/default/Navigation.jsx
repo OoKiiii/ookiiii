@@ -3,7 +3,7 @@ import {commonActions} from "../../store/actions";
 import {connect} from "react-redux";
 import { Link } from 'react-router-dom'
 import FixBackground from "../../assets/images/bg-fix.png";
-import NavigationList from './HeaderList'
+import NavigationList from '../../json/HeaderList'
 import { ArrowRight } from '../item/svg/svg'
 
 const Navigation = props => {
@@ -33,7 +33,7 @@ const Navigation = props => {
 
 const mapStateToProps = state => {
   return {
-    navigationLoad: state.navigation
+    navigationLoad: state.nav
   }
 }
 

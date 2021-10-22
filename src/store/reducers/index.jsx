@@ -6,6 +6,7 @@ import navigationReducer from './navigation.reducers'
 
 import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
+import nav from "./navigation.reducers";
 
 // localStorage에 저장하고 싶으면
 // import storage from 'redux-persist/lib/storage
@@ -27,7 +28,7 @@ const rootReducer = combineReducers({
   // auth: authReducer,
 
   common: commonReducer,
-  navigation: navigationReducer
+  nav: navigationReducer
 });
 
 export default persistReducer(persistConfig, rootReducer);

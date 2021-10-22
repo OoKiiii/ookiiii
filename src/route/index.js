@@ -17,23 +17,25 @@ import QnA from '../component/qna/QnA'
 import Introduce from '../component/IntroduceBox'
 
 ////////// html //////////
-import Html1 from '../component/study/html/Html1'
+import HTMLMain from '../component/study/html'
+import HTML1 from '../component/study/html/html'
 
 ////////// css //////////
-// import Css from '../component/study/html/Html1'
+import CssMain from '../component/study/css'
+import MediaQuery from '../component/study/css/MediaQuery'
 
 ////////// javascript //////////
-// import JavaScript from '../component/study/javascript//Html1'
+import JavaScriptMain from '../component/study/javascript'
 
 ////////// react //////////
 import ReactMain from '../component/study/react'
 import ReduxPersist from '../component/study/react/ReduxPersist'
 
 ////////// vue //////////
-// import Vue from '../component/study/html/Html1'
+import VueMain from '../component/study/vue'
 
 ////////// react-native //////////
-// import ReactNative from '../component/study/html/Html1'
+import ReactNativeMain from '../component/study/react-native'
 
 const Routes = ({ auth }) => {
   return (
@@ -43,21 +45,21 @@ const Routes = ({ auth }) => {
     >
 
       <Route exact path={[
-        '/',
-        '/intro',
-        '/portfolio',
-        '/util',
-        '/qna'
+        '/MoPE-hub',
+        '/MoPE-hub/intro',
+        '/MoPE-hub/portfolio',
+        '/MoPE-hub/util',
+        '/MoPE-hub/qna'
       ]}>
         <DefaultLayout>
           <Switch>
 
-            <Route exact path="/" component={Index} />
-            <Route exact path="/intro" component={Introduce} />
+            <Route exact path="/MoPE-hub" component={Index} />
+            <Route exact path="/MoPE-hub/intro" component={Introduce} />
             {/*<Route exact path="/" component={Login} />*/}
-            <Route exact path="/portfolio" component={Portfolio} />
-            <Route exact path="/util" component={Animation} />
-            <Route exact path="/qna" component={QnA} />
+            <Route exact path="/MoPE-hub/portfolio" component={Portfolio} />
+            <Route exact path="/MoPE-hub/util" component={Animation} />
+            <Route exact path="/MoPE-hub/qna" component={QnA} />
           </Switch>
         </DefaultLayout>
       </Route>
@@ -65,21 +67,23 @@ const Routes = ({ auth }) => {
       {/*<Footer />*/}
 
       <Route path={[
-        '/html',
-        '/css',
-        '/javascript',
-        '/react',
-        '/vue',
-        '/react-native',
+        '/MoPE-hub/html',
+        '/MoPE-hub/css',
+        '/MoPE-hub/javascript',
+        '/MoPE-hub/react',
+        '/MoPE-hub/vue',
+        '/MoPE-hub/react-native',
 
         // HTML
+        '/MoPE-hub/html/1',
 
         // CSS
+        '/MoPE-hub/css/1',
 
         // JavaScript
 
         // React
-        '/react/1',
+        '/MoPE-hub/react/1',
 
         // Vue
 
@@ -89,22 +93,24 @@ const Routes = ({ auth }) => {
         <SubLayout>
           <Switch>
 
-            <Route exact path="/html" component={Html1} />
-            <Route exact path="/css" component={Html1} />
-            <Route exact path="/javascript" component={Html1} />
-            <Route exact path="/react" component={ReactMain} />
-            <Route exact path="/vue" component={Html1} />
-            <Route exact path="/react-native" component={Html1} />
+            <Route exact path="/MoPE-hub/html" component={HTMLMain} />
+            <Route exact path="/MoPE-hub/css" component={CssMain} />
+            <Route exact path="/MoPE-hub/javascript" component={JavaScriptMain} />
+            <Route exact path="/MoPE-hub/react" component={ReactMain} />
+            <Route exact path="/MoPE-hub/vue" component={VueMain} />
+            <Route exact path="/MoPE-hub/react-native" component={ReactNativeMain} />
 
             {/* HTML */}
+            <Route exact path="/MoPE-hub/html/1" component={HTML1} />
 
             {/* CSS */}
+            <Route exact path="/MoPE-hub/css/1" component={MediaQuery} />
 
             {/* JavaScript */}
 
             {/* React */}
 
-            <Route exact path="/react/1" component={ReduxPersist} />
+            <Route exact path="/MoPE-hub/react/1" component={ReduxPersist} />
 
             {/* Vue */}
 

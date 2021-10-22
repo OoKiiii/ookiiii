@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/scss/style.scss';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom'
 
 import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
@@ -31,7 +32,9 @@ const persistor = persistStore(store);
 ReactDOM.render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
-      <App />
+      <BrowserRouter basename="/MoPE-hub">
+        <App />
+      </BrowserRouter>
     </PersistGate>
   </Provider>,
   document.getElementById('root')
