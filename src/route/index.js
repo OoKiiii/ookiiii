@@ -26,6 +26,10 @@ import MediaQuery from '../component/study/css/MediaQuery'
 
 ////////// javascript //////////
 import JavaScriptMain from '../component/study/javascript'
+import NumberInstance from '../component/study/javascript/NumberInstance'
+import PrimitiveValute from '../component/study/javascript/PrimitiveValute'
+import toStringPage from '../component/study/javascript/toString'
+import toExponentialPage from '../component/study/javascript/toExponential'
 
 ////////// react //////////
 import ReactMain from '../component/study/react'
@@ -81,6 +85,10 @@ const Routes = ({ auth }) => {
         '/MoPE-hub/css/1',
 
         // JavaScript
+        '/MoPE-hub/javascript/1',
+        '/MoPE-hub/javascript/2',
+        '/MoPE-hub/javascript/3',
+        '/MoPE-hub/javascript/4',
 
         // React
         '/MoPE-hub/react/1',
@@ -107,6 +115,10 @@ const Routes = ({ auth }) => {
             <Route exact path="/MoPE-hub/css/1" component={MediaQuery} />
 
             {/* JavaScript */}
+            <Route exact path="/MoPE-hub/javascript/1" component={NumberInstance} />
+            <Route exact path="/MoPE-hub/javascript/2" component={PrimitiveValute} />
+            <Route exact path="/MoPE-hub/javascript/3" component={toStringPage} />
+            <Route exact path="/MoPE-hub/javascript/4" component={toExponentialPage} />
 
             {/* React */}
 

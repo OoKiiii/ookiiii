@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {connect} from "react-redux";
 
-const JavaScriptMain = (props) => {
+const NumberInstance = (props) => {
 
   return(
     <React.Fragment>
@@ -24,4 +24,4 @@ const actionCreators = {
 export default connect(
   mapStateToProps,
   actionCreators,
-)(JavaScriptMain)
+)(NumberInstance)

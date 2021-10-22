@@ -5,15 +5,24 @@ h4.title {
 }
 
 h5.sub-title {
-  margin: 3rem 0 1rem 0;
+  margin: 4rem 0 1rem 0;
   font-size: 2.4rem;
 }
 
-.explain {
-  display: block;
-  font-size: 2rem;
-  margin: 2rem 0;
-  line-height: 3rem;
+.explain-box {
+  margin: 1.5rem 0;
+  .explain {
+    display: block;
+    font-size: 2rem;
+    line-height: 3rem;
+    &.before-dot:before {
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      content: "•";
+      margin-right: 1rem;
+    }
+  }
 }
 
 a {

@@ -15,7 +15,19 @@
     "JavaScript": [
       {
         "path": "/MoPE-hub/javascript/1",
-        "title": "1. JavaScript"
+        "title": "1. Number 인스턴스"
+      },
+      {
+        "path": "/MoPE-hub/javascript/2",
+        "title": "2. Primitive Valute"
+      },
+      {
+        "path": "/MoPE-hub/javascript/3",
+        "title": "3. toString()"
+      },
+      {
+        "path": "/MoPE-hub/javascript/4",
+        "title": "4. toExponential()"
       }
     ],
     "React": [
