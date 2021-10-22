@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd67bb8d2a063b28d55ef258f5f0ec60",
+    "revision": "7454e255f6148d5427b9bb53ef044732",
     "url": "/MoPE-hub/index.html"
   },
   {
