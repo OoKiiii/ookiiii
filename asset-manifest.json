@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/MoPE-hub/static/css/main.241b9041.chunk.css",
-    "main.js": "/MoPE-hub/static/js/main.c01ab5ba.chunk.js",
-    "main.js.map": "/MoPE-hub/static/js/main.c01ab5ba.chunk.js.map",
+    "main.js": "/MoPE-hub/static/js/main.6f3bcc1d.chunk.js",
+    "main.js.map": "/MoPE-hub/static/js/main.6f3bcc1d.chunk.js.map",
     "runtime-main.js": "/MoPE-hub/static/js/runtime-main.228135da.js",
     "runtime-main.js.map": "/MoPE-hub/static/js/runtime-main.228135da.js.map",
     "static/js/2.51daa48f.chunk.js": "/MoPE-hub/static/js/2.51daa48f.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.d72ce1c0.chunk.js": "/MoPE-hub/static/js/3.d72ce1c0.chunk.js",
     "static/js/3.d72ce1c0.chunk.js.map": "/MoPE-hub/static/js/3.d72ce1c0.chunk.js.map",
     "index.html": "/MoPE-hub/index.html",
-    "precache-manifest.8c7acb530747a7186aa2f9546a3719cb.js": "/MoPE-hub/precache-manifest.8c7acb530747a7186aa2f9546a3719cb.js",
+    "precache-manifest.a96275cc18d6888a61231841cf3e75e3.js": "/MoPE-hub/precache-manifest.a96275cc18d6888a61231841cf3e75e3.js",
     "service-worker.js": "/MoPE-hub/service-worker.js",
     "static/css/main.241b9041.chunk.css.map": "/MoPE-hub/static/css/main.241b9041.chunk.css.map",
     "static/js/2.51daa48f.chunk.js.LICENSE.txt": "/MoPE-hub/static/js/2.51daa48f.chunk.js.LICENSE.txt",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.228135da.js",
     "static/js/2.51daa48f.chunk.js",
     "static/css/main.241b9041.chunk.css",
-    "static/js/main.c01ab5ba.chunk.js"
+    "static/js/main.6f3bcc1d.chunk.js"
   ]
 }

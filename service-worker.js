@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/MoPE-hub/precache-manifest.8c7acb530747a7186aa2f9546a3719cb.js"
+  "/MoPE-hub/precache-manifest.a96275cc18d6888a61231841cf3e75e3.js"
 );
 
 self.addEventListener('message', (event) => {
