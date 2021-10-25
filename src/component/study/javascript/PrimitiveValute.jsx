@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {connect} from "react-redux";
 
-const NumberInstance = (props) => {
+const PrimitiveValue = (props) => {
 
   return(
     <React.Fragment>
@@ -17,7 +17,7 @@ const NumberInstance = (props) => {
             const book = "책"
           </span>
           <span className="explain">
-            *책은 이 이상 분해, 전개 불가
+            * 책은 이 이상 분해, 전개 불가
           </span>
         </div>
 
@@ -156,4 +156,4 @@ const actionCreators = {
 export default connect(
   mapStateToProps,
   actionCreators,
-)(NumberInstance)
+)(PrimitiveValue)

@@ -6,9 +6,13 @@
   background: #4775bf;
   border-right: .1rem solid #ffffff;
   z-index: 999999;
+  overflow-y: hidden;
   .navigation-box {
+    height: 85rem;
     padding: 10rem 3rem;
     ul {
+      height: 100%;
+      overflow-y: scroll;
       li {
         display: flex;
         align-items: center;

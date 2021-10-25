@@ -23,7 +23,7 @@ const Main = (props) => {
             </ul>
           </div>
 
-          <span className="explain text-center">
+          <span className="fs-16 text-center">
             이곳에 작성되어 있는 글은 직접 퍼블리싱하고 모든 컴포넌트를 직접 작성해서 만든 것 입니다.
             <br />
             백엔드, DB작업은 전혀 되어 있지 않습니다.

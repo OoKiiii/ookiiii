@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {connect} from "react-redux";
 
-const NumberInstance = (props) => {
+const ToString = (props) => {
 
   return(
     <React.Fragment>
@@ -17,7 +17,7 @@ const NumberInstance = (props) => {
             <br />
             반환 : 변환한 값
             <br />
-            *data를 string타입으로 변환
+            * data를 string타입으로 변환
           </span>
         </div>
 
@@ -59,14 +59,14 @@ console.log(20..toString());
         <div className="explain-box">
           <span className="explain">
             data : 변환 대상
-
+            <br />
             파라미터 : 사용X
-
+            <br />
             반환 : 변환한 값
-
-            *ES5 : 파라미터 사용 불가
-
-            *ES6 : 언어타입의 파라미터 사용 가능
+            <br />
+            * ES5 : 파라미터 사용 불가
+            <br />
+            * ES6 : 언어타입의 파라미터 사용 가능
           </span>
         </div>
 
@@ -116,4 +116,4 @@ const actionCreators = {
 export default connect(
   mapStateToProps,
   actionCreators,
-)(NumberInstance)
+)(ToString)

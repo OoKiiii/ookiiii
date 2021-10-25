@@ -28,6 +28,10 @@
       {
         "path": "/MoPE-hub/javascript/4",
         "title": "4. toExponential()"
+      },
+      {
+        "path": "/MoPE-hub/javascript/5",
+        "title": "5. String()"
       }
     ],
     "React": [
@@ -46,6 +50,12 @@
       {
         "path": "/MoPE-hub/react-native/1",
         "title": "1. React-Native"
+      }
+    ],
+    "Etc": [
+      {
+        "path": "/MoPE-hub/etc/1",
+        "title": "1. IntelliJ 사용후기"
       }
     ]
   }

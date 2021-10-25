@@ -30,6 +30,7 @@ import NumberInstance from '../component/study/javascript/NumberInstance'
 import PrimitiveValute from '../component/study/javascript/PrimitiveValute'
 import toStringPage from '../component/study/javascript/toString'
 import toExponentialPage from '../component/study/javascript/toExponential'
+import String from '../component/study/javascript/String'
 
 ////////// react //////////
 import ReactMain from '../component/study/react'
@@ -40,6 +41,10 @@ import VueMain from '../component/study/vue'
 
 ////////// react-native //////////
 import ReactNativeMain from '../component/study/react-native'
+
+////////// etc //////////
+import EtcMain from '../component/study/etc'
+import Etc1 from '../component/study/etc/etc1'
 
 const Routes = ({ auth }) => {
   return (
@@ -77,6 +82,7 @@ const Routes = ({ auth }) => {
         '/MoPE-hub/react',
         '/MoPE-hub/vue',
         '/MoPE-hub/react-native',
+        '/MoPE-hub/etc',
 
         // HTML
         '/MoPE-hub/html/1',
@@ -89,6 +95,7 @@ const Routes = ({ auth }) => {
         '/MoPE-hub/javascript/2',
         '/MoPE-hub/javascript/3',
         '/MoPE-hub/javascript/4',
+        '/MoPE-hub/javascript/5',
 
         // React
         '/MoPE-hub/react/1',
@@ -96,6 +103,9 @@ const Routes = ({ auth }) => {
         // Vue
 
         // React-Native
+
+        // etc
+        '/MoPE-hub/etc/1',
 
       ]}>
         <SubLayout>
@@ -107,6 +117,7 @@ const Routes = ({ auth }) => {
             <Route exact path="/MoPE-hub/react" component={ReactMain} />
             <Route exact path="/MoPE-hub/vue" component={VueMain} />
             <Route exact path="/MoPE-hub/react-native" component={ReactNativeMain} />
+            <Route exact path="/MoPE-hub/etc" component={EtcMain} />
 
             {/* HTML */}
             <Route exact path="/MoPE-hub/html/1" component={HTML1} />
@@ -119,6 +130,7 @@ const Routes = ({ auth }) => {
             <Route exact path="/MoPE-hub/javascript/2" component={PrimitiveValute} />
             <Route exact path="/MoPE-hub/javascript/3" component={toStringPage} />
             <Route exact path="/MoPE-hub/javascript/4" component={toExponentialPage} />
+            <Route exact path="/MoPE-hub/javascript/5" component={String} />
 
             {/* React */}
 
@@ -127,6 +139,9 @@ const Routes = ({ auth }) => {
             {/* Vue */}
 
             {/* React-Native */}
+
+            {/* Etc */}
+            <Route exact path="/MoPE-hub/etc/1" component={Etc1} />
 
           </Switch>
         </SubLayout>

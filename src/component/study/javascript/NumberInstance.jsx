@@ -50,7 +50,7 @@ console.log(typeof obj);
 
         <div className="explain-box">
           <span className="explain">
-            *대문자 Object와 소문자 object 반드시 구분이 필요
+            * 대문자 Object와 소문자 object 반드시 구분이 필요
             <br />
             new와 첫문자가 대문자 일 때 인스턴스를 생성하겠다는 의도가 내포되어 있음.
           </span>
@@ -121,7 +121,7 @@ console.log(obj.valueOf());
 
         <div className="explain-box">
           <span className="explain">
-            *인스턴스 생성 기준은 prototype을 기준으로 연결되어 있는 함수만 가지고 옴.
+            * 인스턴스 생성 기준은 prototype을 기준으로 연결되어 있는 함수만 가지고 옴.
           </span>
         </div>
 

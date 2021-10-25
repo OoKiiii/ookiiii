@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {connect} from "react-redux";
 
-const NumberInstance = (props) => {
+const ToExponential = (props) => {
 
   return(
     <React.Fragment>
@@ -167,4 +167,4 @@ const actionCreators = {
 export default connect(
   mapStateToProps,
   actionCreators,
-)(NumberInstance)
+)(ToExponential)
