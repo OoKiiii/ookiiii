@@ -15,7 +15,7 @@ const EtcMain = (props) => {
             <br />
             HTML : bucket?(이름이 기억안난다..모르겠다..) → atom → VSC → WebStorm
             <br />
-            JAVA : 이클립스 → IntelliJ
+            Front-end : 이클립스 → IntelliJ
             <br />
             지금은 IntelliJ만 사용
             <br />
