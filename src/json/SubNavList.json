@@ -38,6 +38,10 @@
       {
         "path": "/MoPE-hub/react/1",
         "title": "1. Redux-Persist"
+      },
+      {
+        "path": "/MoPE-hub/react/2",
+        "title": "2. Jest-Methods 정리"
       }
     ],
     "Vue": [
@@ -56,6 +60,10 @@
       {
         "path": "/MoPE-hub/etc/1",
         "title": "1. IntelliJ 사용후기"
+      },
+      {
+        "path": "/MoPE-hub/etc/2",
+        "title": "2. AWS Amplify 도메인 연결"
       }
     ]
   }

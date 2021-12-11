@@ -35,6 +35,7 @@ import String from '../component/study/javascript/String'
 ////////// react //////////
 import ReactMain from '../component/study/react'
 import ReduxPersist from '../component/study/react/ReduxPersist'
+import JestMethod from '../component/study/react/JestMethods'
 
 ////////// vue //////////
 import VueMain from '../component/study/vue'
@@ -45,6 +46,7 @@ import ReactNativeMain from '../component/study/react-native'
 ////////// etc //////////
 import EtcMain from '../component/study/etc'
 import Etc1 from '../component/study/etc/etc1'
+import Etc2 from '../component/study/etc/etc2'
 
 const Routes = ({ auth }) => {
   return (
@@ -69,6 +71,7 @@ const Routes = ({ auth }) => {
             <Route exact path="/MoPE-hub/portfolio" component={Portfolio} />
             <Route exact path="/MoPE-hub/util" component={Animation} />
             <Route exact path="/MoPE-hub/qna" component={QnA} />
+
           </Switch>
         </DefaultLayout>
       </Route>
@@ -99,6 +102,7 @@ const Routes = ({ auth }) => {
 
         // React
         '/MoPE-hub/react/1',
+        '/MoPE-hub/react/2',
 
         // Vue
 
@@ -106,6 +110,7 @@ const Routes = ({ auth }) => {
 
         // etc
         '/MoPE-hub/etc/1',
+        '/MoPE-hub/etc/2',
 
       ]}>
         <SubLayout>
@@ -133,8 +138,8 @@ const Routes = ({ auth }) => {
             <Route exact path="/MoPE-hub/javascript/5" component={String} />
 
             {/* React */}
-
             <Route exact path="/MoPE-hub/react/1" component={ReduxPersist} />
+            <Route exact path="/MoPE-hub/react/2" component={JestMethod} />
 
             {/* Vue */}
 
@@ -142,6 +147,7 @@ const Routes = ({ auth }) => {
 
             {/* Etc */}
             <Route exact path="/MoPE-hub/etc/1" component={Etc1} />
+            <Route exact path="/MoPE-hub/etc/2" component={Etc2} />
 
           </Switch>
         </SubLayout>
