@@ -1,12 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { connect } from 'react-redux'
+import { connect, useSelector } from 'react-redux'
 import {commonActions, navigationActions} from '../../store/actions'
 import isNav from "../../store/reducers/common.reducers";
 import NavigationList from "../../json/HeaderList.json";
 import nav from "../../store/reducers/navigation.reducers";
 
 const Header = props => {
+
+  const navData = useSelector((state) => state.nav );
+  const commonData = useSelector((state) => state.common );
+  const subNavData = useSelector((state) => state.SubNav );
+
+  console.log(navData)
+  console.log(commonData)
+  console.log(subNavData)
 
   const { HeaderNav } = props
 

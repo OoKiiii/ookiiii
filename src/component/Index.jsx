@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import {connect} from "react-redux";
+import { connect, useSelector } from "react-redux";
 import {navigationActions} from "../store/actions";
 
 const Main = (props) => {

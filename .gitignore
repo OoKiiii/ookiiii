@@ -1,5 +1,7 @@
 .idea/
 node_modules
+build
 
 *.scssc
 *.map
+.DS_Store
