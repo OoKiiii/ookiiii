@@ -1,28 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import { connect } from 'react-redux'
+import React, { useEffect, useState } from 'react';
 
-import Header from '../component/default/Header'
-import Navigation from "../component/default/Navigation";
+import Header from '../component/default/Header';
 
 const DefaultLayout = ({ children }) => {
+    return (
+        <React.Fragment>
+            <Header />
+            {children}
+        </React.Fragment>
+    );
+};
 
-  return (
-    <React.Fragment>
-			<Header />
-        {children}
-    </React.Fragment>
-  )
-}
-
-const mapStateToProps = state => ({
-  //
-})
-
-const actionCreators = {
-  //
-}
-
-export default connect(
-  mapStateToProps,
-  actionCreators,
-)(DefaultLayout)
+export default DefaultLayout;

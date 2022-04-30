@@ -1,65 +1,72 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { connect, useSelector } from 'react-redux'
-import {commonActions, navigationActions} from '../../store/actions'
-import isNav from "../../store/reducers/common.reducers";
-import NavigationList from "../../json/HeaderList.json";
-import nav from "../../store/reducers/navigation.reducers";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styled from '@emotion/styled';
 
-const Header = props => {
+const Header = () => {
+    return (
+        <React.Fragment>
+            <HeaderWrapper>
+                <HeaderContainer>
+                    <HeaderListBox>
+                        <HeaderListContent>
+                            <Link to="/">HOME</Link>
+                        </HeaderListContent>
+                        <HeaderListContent>
+                            <Link to="/html">HTML</Link>
+                        </HeaderListContent>
+                        <HeaderListContent>
+                            <Link to="/css">CSS</Link>
+                        </HeaderListContent>
+                        <HeaderListContent>
+                            <Link to="/javascript">JavaScript</Link>
+                        </HeaderListContent>
+                        <HeaderListContent>
+                            <Link to="/react">React</Link>
+                        </HeaderListContent>
+                        <HeaderListContent>
+                            <Link to="/vue">Vue</Link>
+                        </HeaderListContent>
+                    </HeaderListBox>
+                </HeaderContainer>
+            </HeaderWrapper>
+        </React.Fragment>
+    );
+};
 
-  const navData = useSelector((state) => state.nav );
-  const commonData = useSelector((state) => state.common );
-  const subNavData = useSelector((state) => state.SubNav );
+const HeaderWrapper = styled.div`
+    width: 100%;
+    border-bottom: 0.2rem solid #ffffff;
+    height: 6rem;
+    position: fixed;
+    top: 0;
+    background: #4775bf;
+    z-index: 99999;
+`;
 
-  console.log(navData)
-  console.log(commonData)
-  console.log(subNavData)
+const HeaderContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    font-size: 2rem;
+    color: #161616;
+`;
 
-  const { HeaderNav } = props
+const HeaderListBox = styled.ul`
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+`;
 
-  const [ state, setState ] = useState({})
+const HeaderListContent = styled.li`
+    margin: 0 1rem;
+    padding: 0 1rem;
+    border-left: 0.1rem solid #ffffff;
+    border-right: 0.1rem solid #ffffff;
+    &:last-child {
+        margin-right: 5rem;
+    }
+`;
 
-  useEffect(() => {
-    props.HeaderLoad()
-  }, [HeaderNav])
-
-  return(
-    <React.Fragment>
-      <header>
-        <div className="header-box">
-          <ul>
-            {
-              props.nav.HeaderList.map((data, index) => {
-                return (
-                  <li onClick={() => props.NavLoad(data.title)} key={index}>
-                    <Link to={data.link}>{data.title}</Link>
-                  </li>
-                )
-              })
-            }
-          </ul>
-        </div>
-      </header>
-    </React.Fragment>
-  )
-}
-
-const mapStateToProps = state => {
-  return {
-    common: state.common,
-    SubNav: state.nav,
-    nav: state.nav
-  }
-}
-
-const actionCreators = {
-  navOpen: commonActions.navOpen,
-  NavLoad: navigationActions.NavLoad,
-  HeaderLoad: navigationActions.HeaderLoad
-}
-
-export default connect(
-  mapStateToProps,
-  actionCreators
-)(Header)
+export default Header;

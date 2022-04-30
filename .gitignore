@@ -4,4 +4,15 @@ build
 
 *.scssc
 *.map
-.DS_Store
+
+src/.DS_Store
+
+src/assets/.DS_Store
+
+src/component/.DS_Store
+
+src/component/study/.DS_Store
+
+src/component/item/.DS_Store
+
+yarn.lock

@@ -1,169 +1,116 @@
-import React from 'react'
-import { Router, Route, Switch } from 'react-router-dom'
+import React from "react";
+import { Router, Route, Switch } from "react-router-dom";
 
-import history from './history'
+import history from "./history";
 
 ////////// defalut //////////
-import Header from '../component/default/Header'
-import Footer from '../component/default/Footer'
+import Header from "../component/default/Header";
+import Footer from "../component/default/Footer";
 import DefaultLayout from "../layout/DefaultLayout";
 import SubLayout from "../layout/SubLayout";
 
 ////////// component //////////
-import Index from '../component/Index'
-import Portfolio from '../component/Portfolio'
-import Animation from '../component/item/Animation'
-import QnA from '../component/qna/QnA'
-import Introduce from '../component/IntroduceBox'
+import Index from "../component/Index";
+import Portfolio from "../component/Portfolio";
+import Animation from "../component/item/Animation";
+import QnA from "../component/qna/QnA";
+import Introduce from "../component/IntroduceBox";
 
 ////////// html //////////
-import HTMLMain from '../component/study/html'
-import HTML1 from '../component/study/html/html'
+import HTMLMain from "../component/study/html";
+import HTML1 from "../component/study/html/html";
 
 ////////// css //////////
-import CssMain from '../component/study/css'
-import MediaQuery from '../component/study/css/MediaQuery'
+import CssMain from "../component/study/css";
+import MediaQuery from "../component/study/css/MediaQuery";
 
 ////////// javascript //////////
-import JavaScriptMain from '../component/study/javascript'
-import NumberInstance from '../component/study/javascript/NumberInstance'
-import PrimitiveValute from '../component/study/javascript/PrimitiveValute'
-import toStringPage from '../component/study/javascript/toString'
-import toExponentialPage from '../component/study/javascript/toExponential'
-import String from '../component/study/javascript/String'
+import JavaScriptMain from "../component/study/javascript";
 
 ////////// react //////////
-import ReactMain from '../component/study/react'
-import ReduxPersist from '../component/study/react/ReduxPersist'
-import JestMethod from '../component/study/react/JestMethods'
+import ReactMain from "../component/study/react";
+import ReduxPersist from "../component/study/react/ReduxPersist";
 
 ////////// vue //////////
-import VueMain from '../component/study/vue'
+import VueMain from "../component/study/vue";
 
 ////////// react-native //////////
-import ReactNativeMain from '../component/study/react-native'
-
-////////// etc //////////
-import EtcMain from '../component/study/etc'
-import Etc1 from '../component/study/etc/etc1'
-import Etc2 from '../component/study/etc/etc2'
 
 const Routes = ({ auth }) => {
-  return (
+    return (
+        <Router history={history}>
+            <Route exact path={["/", "/intro", "/portfolio", "/util", "/qna"]}>
+                <DefaultLayout>
+                    <Switch>
+                        <Route exact path="/" component={Index} />
+                        <Route exact path="/intro" component={Introduce} />
+                        {/*<Route exact path="/" component={Login} />*/}
+                        <Route exact path="/portfolio" component={Portfolio} />
+                        <Route exact path="/util" component={Animation} />
+                        <Route exact path="/qna" component={QnA} />
+                    </Switch>
+                </DefaultLayout>
+            </Route>
 
-    <Router
-      history={history}
-    >
+            {/*<Footer />*/}
 
-      <Route exact path={[
-        '/MoPE-hub',
-        '/MoPE-hub/intro',
-        '/MoPE-hub/portfolio',
-        '/MoPE-hub/util',
-        '/MoPE-hub/qna'
-      ]}>
-        <DefaultLayout>
-          <Switch>
+            <Route
+                path={[
+                    "/html",
+                    "/css",
+                    "/javascript",
+                    "/react",
+                    "/vue",
+                    "/react-native",
 
-            <Route exact path="/MoPE-hub" component={Index} />
-            <Route exact path="/MoPE-hub/intro" component={Introduce} />
-            {/*<Route exact path="/" component={Login} />*/}
-            <Route exact path="/MoPE-hub/portfolio" component={Portfolio} />
-            <Route exact path="/MoPE-hub/util" component={Animation} />
-            <Route exact path="/MoPE-hub/qna" component={QnA} />
+                    // HTML
+                    "/html/1",
 
-          </Switch>
-        </DefaultLayout>
-      </Route>
+                    // CSS
+                    "/css/1",
 
-      {/*<Footer />*/}
+                    // JavaScript
 
-      <Route path={[
-        '/MoPE-hub/html',
-        '/MoPE-hub/css',
-        '/MoPE-hub/javascript',
-        '/MoPE-hub/react',
-        '/MoPE-hub/vue',
-        '/MoPE-hub/react-native',
-        '/MoPE-hub/etc',
+                    // React
+                    "/react/1",
 
-        // HTML
-        '/MoPE-hub/html/1',
+                    // Vue
 
-        // CSS
-        '/MoPE-hub/css/1',
+                    // React-Native
+                ]}
+            >
+                <SubLayout>
+                    <Switch>
+                        <Route exact path="/html" component={HTMLMain} />
+                        <Route exact path="/css" component={CssMain} />
+                        <Route
+                            exact
+                            path="/javascript"
+                            component={JavaScriptMain}
+                        />
+                        <Route exact path="/react" component={ReactMain} />
+                        <Route exact path="/vue" component={VueMain} />
 
-        // JavaScript
-        '/MoPE-hub/javascript/1',
-        '/MoPE-hub/javascript/2',
-        '/MoPE-hub/javascript/3',
-        '/MoPE-hub/javascript/4',
-        '/MoPE-hub/javascript/5',
+                        {/* HTML */}
+                        <Route exact path="/html/1" component={HTML1} />
 
-        // React
-        '/MoPE-hub/react/1',
-        '/MoPE-hub/react/2',
+                        {/* CSS */}
+                        <Route exact path="/css/1" component={MediaQuery} />
 
-        // Vue
+                        {/* JavaScript */}
 
-        // React-Native
+                        {/* React */}
 
-        // etc
-        '/MoPE-hub/etc/1',
-        '/MoPE-hub/etc/2',
+                        <Route exact path="/react/1" component={ReduxPersist} />
 
-      ]}>
-        <SubLayout>
-          <Switch>
+                        {/* Vue */}
 
-            <Route exact path="/MoPE-hub/html" component={HTMLMain} />
-            <Route exact path="/MoPE-hub/css" component={CssMain} />
-            <Route exact path="/MoPE-hub/javascript" component={JavaScriptMain} />
-            <Route exact path="/MoPE-hub/react" component={ReactMain} />
-            <Route exact path="/MoPE-hub/vue" component={VueMain} />
-            <Route exact path="/MoPE-hub/react-native" component={ReactNativeMain} />
-            <Route exact path="/MoPE-hub/etc" component={EtcMain} />
+                        {/* React-Native */}
+                    </Switch>
+                </SubLayout>
+            </Route>
+        </Router>
+    );
+};
 
-            {/* HTML */}
-            <Route exact path="/MoPE-hub/html/1" component={HTML1} />
-
-            {/* CSS */}
-            <Route exact path="/MoPE-hub/css/1" component={MediaQuery} />
-
-            {/* JavaScript */}
-            <Route exact path="/MoPE-hub/javascript/1" component={NumberInstance} />
-            <Route exact path="/MoPE-hub/javascript/2" component={PrimitiveValute} />
-            <Route exact path="/MoPE-hub/javascript/3" component={toStringPage} />
-            <Route exact path="/MoPE-hub/javascript/4" component={toExponentialPage} />
-            <Route exact path="/MoPE-hub/javascript/5" component={String} />
-
-            {/* React */}
-            <Route exact path="/MoPE-hub/react/1" component={ReduxPersist} />
-            <Route exact path="/MoPE-hub/react/2" component={JestMethod} />
-
-            {/* Vue */}
-
-            {/* React-Native */}
-
-            {/* Etc */}
-            <Route exact path="/MoPE-hub/etc/1" component={Etc1} />
-            <Route exact path="/MoPE-hub/etc/2" component={Etc2} />
-
-          </Switch>
-        </SubLayout>
-      </Route>
-
-    </Router>
-
-
-
-  )
-}
-
-const mapStateToProps = state => ({
-  auth: state.auth,
-})
-
-// export default withRouter(Routes)
-
-export default Routes
+export default Routes;

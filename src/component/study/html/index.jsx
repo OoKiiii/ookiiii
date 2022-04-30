@@ -1,27 +1,30 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import {connect} from "react-redux";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styled from '@emotion/styled';
 
-const HTMLMain = (props) => {
+const HTMLMain = props => {
+    return (
+        <React.Fragment>
+            <DescriptionWrapper>
+                <DescriptionTitle>HTML을 공부하면서 이것저것 적어놓은 곳</DescriptionTitle>
+            </DescriptionWrapper>
+        </React.Fragment>
+    );
+};
 
-  return(
-    <React.Fragment>
-      <div className="description-box">
-        <h4 className="title">HTML을 공부하면서 이것저것 적어놓은 곳</h4>
-      </div>
-    </React.Fragment>
-  )
-}
+const DescriptionWrapper = styled.div`
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 88%;
+    padding: 7rem 5rem 3rem 35rem;
+    margin-bottom: 3rem;
+`;
 
-const mapStateToProps = state => ({
-  //
-})
+const DescriptionTitle = styled.h4`
+    margin: 5rem 0 3rem 0;
+    font-size: 3rem;
+    text-align: center;
+`;
 
-const actionCreators = {
-  //
-}
-
-export default connect(
-  mapStateToProps,
-  actionCreators,
-)(HTMLMain)
+export default HTMLMain;

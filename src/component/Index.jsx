@@ -1,49 +1,89 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { connect, useSelector } from "react-redux";
-import {navigationActions} from "../store/actions";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styled from '@emotion/styled';
 
-const Main = (props) => {
+const Main = () => {
+    return (
+        <MainWrapper>
+            <MainContainer>
+                <MainText className="text-blue">그냥 혼자 이것저것 적어놓는 곳</MainText>
+                <MainLinkBox>
+                    <MainLinkList>
+                        <MainLinkListContent>
+                            <Link to="/html">HTML</Link>
+                        </MainLinkListContent>
+                        <MainLinkListContent>
+                            <Link to="/css">CSS</Link>
+                        </MainLinkListContent>
+                        <MainLinkListContent>
+                            <Link to="/javascript">Javascript</Link>
+                        </MainLinkListContent>
+                    </MainLinkList>
+                    <MainLinkList>
+                        <MainLinkListContent>
+                            <Link to="/react">React.js</Link>
+                        </MainLinkListContent>
+                        <MainLinkListContent>
+                            <Link to="/vue">Vue.js</Link>
+                        </MainLinkListContent>
+                        <MainLinkListContent>
+                            <Link to="/react-native">React-Native</Link>
+                        </MainLinkListContent>
+                    </MainLinkList>
+                </MainLinkBox>
 
-  return(
-    <React.Fragment>
-      <div className="wrap">
-        <div className="main">
-          <h3 className="text-blue">그냥 혼자 이것저것 적어놓는 곳</h3>
-          <div className="link-box">
-            <ul className="dis-flex">
-              <li><Link to="/MoPE-hub/html" onClick={() => props.NavLoad('HTML')}>HTML</Link></li>
-              <li><Link to="/MoPE-hub/css" onClick={() => props.NavLoad('CSS')}>CSS</Link></li>
-              <li><Link to="/MoPE-hub/javascript" onClick={() => props.NavLoad('JavaScript')}>Javascript</Link></li>
-            </ul>
-            <ul className="dis-flex">
-              <li><Link to="/MoPE-hub/react" onClick={() => props.NavLoad('React')}>React.js</Link></li>
-              <li><Link to="/MoPE-hub/vue" onClick={() => props.NavLoad('Vue')}>Vue.js</Link></li>
-              <li><Link to="/MoPE-hub/react-native" onClick={() => props.NavLoad('React-Native')}>React-Native</Link></li>
-            </ul>
-          </div>
+                <MainExplain>
+                    이곳에 작성되어 있는 글은 직접 퍼블리싱하고 모든 컴포넌트를 직접 작성해서 만든 것 입니다.
+                    <br />
+                    백엔드, DB작업은 전혀 되어 있지 않습니다.
+                </MainExplain>
+            </MainContainer>
+        </MainWrapper>
+    );
+};
 
-          <span className="fs-16 text-center">
-            이곳에 작성되어 있는 글은 직접 퍼블리싱하고 모든 컴포넌트를 직접 작성해서 만든 것 입니다.
-            <br />
-            백엔드, DB작업은 전혀 되어 있지 않습니다.
-          </span>
+const MainWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+`;
 
-        </div>
-      </div>
-    </React.Fragment>
-  )
-}
+const MainText = styled.h3`
+    font-size: 3rem;
+`;
 
-const mapStateToProps = state => ({
-  //
-})
+const MainContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+`;
 
-const actionCreators = {
-  NavLoad: navigationActions.NavLoad
-}
+const MainLinkBox = styled.div`
+    margin: 5rem 0;
+`;
 
-export default connect(
-  mapStateToProps,
-  actionCreators,
-)(Main)
+const MainLinkList = styled.ul`
+    display: flex;
+    padding: 2rem 0;
+`;
+
+const MainLinkListContent = styled.li`
+    width: 20rem;
+    text-align: center;
+    cursor: pointer;
+    a {
+        font-size: 2.4rem;
+    }
+`;
+
+const MainExplain = styled.span`
+    display: block;
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+`;
+
+export default Main;
