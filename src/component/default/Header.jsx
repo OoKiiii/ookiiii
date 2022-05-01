@@ -1,30 +1,60 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from '@emotion/styled';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "@emotion/styled";
+import { useStoreCommon } from "../../store";
 
 const Header = () => {
+    const common = useStoreCommon((state) => state);
+
     return (
         <React.Fragment>
             <HeaderWrapper>
                 <HeaderContainer>
                     <HeaderListBox>
                         <HeaderListContent>
-                            <Link to="/">HOME</Link>
+                            <Link to="/" onClick={() => common.setType("")}>
+                                HOME
+                            </Link>
                         </HeaderListContent>
                         <HeaderListContent>
-                            <Link to="/html">HTML</Link>
+                            <Link
+                                to="/html"
+                                onClick={() => common.setType("html")}
+                            >
+                                HTML
+                            </Link>
                         </HeaderListContent>
                         <HeaderListContent>
-                            <Link to="/css">CSS</Link>
+                            <Link
+                                to="/css"
+                                onClick={() => common.setType("css")}
+                            >
+                                CSS
+                            </Link>
                         </HeaderListContent>
                         <HeaderListContent>
-                            <Link to="/javascript">JavaScript</Link>
+                            <Link
+                                to="/javascript"
+                                onClick={() => common.setType("javascript")}
+                            >
+                                JavaScript
+                            </Link>
                         </HeaderListContent>
                         <HeaderListContent>
-                            <Link to="/react">React</Link>
+                            <Link
+                                to="/react"
+                                onClick={() => common.setType("react")}
+                            >
+                                React
+                            </Link>
                         </HeaderListContent>
                         <HeaderListContent>
-                            <Link to="/vue">Vue</Link>
+                            <Link
+                                to="/vue"
+                                onClick={() => common.setType("vue")}
+                            >
+                                Vue
+                            </Link>
                         </HeaderListContent>
                     </HeaderListBox>
                 </HeaderContainer>
